@@ -81,7 +81,7 @@ border: 1px solid rgba(166,183,203,0.9);
 .contenedor_1 {
   border:1px solid #A6A6A6;
   margin: 1px 3px 1px 0;
-  width:538px;width:calc(100% - 473px);
+  width:538px;width:calc(100% - 454px);
   min-height:560px;
   background: #EEEEEE;
   padding: 3px 2px 5px 2px;
@@ -125,21 +125,21 @@ border: 1px solid rgba(166,183,203,0.9);
   height: 68px;
   width: 116px;
 }
-.btn_apertura {position: absolute;top: 132px;left: 40px;}
-.btn_retiro {position: absolute;top: 132px;left: 180px;}
-.btn_factura {position: absolute;top: 132px;left: 320px;}
-.btn_cierre {position: absolute;top: 220px;left: 40px;}
-.btn_productos {position: absolute;top: 220px;left: 180px;}
-.btn_asistencia {position: absolute;top: 220px;left: 320px;}
-.btn_boletaf {position: absolute;top: 310px;left: 40px;}
-.btn_x {position: absolute;top: 310px;left: 180px;}
-.btn_diferido {position: absolute;top: 310px;left: 320px;}
-.btn_boletam {position: absolute;top: 400px;left: 40px;}
-.btn_recargas {position: absolute;top: 400px;left: 180px;}
-.btn_personal {position: absolute;top: 400px;left: 320px;}
+.btn_apertura {position: absolute;top: 132px;left: 30px;}
+.btn_retiro {position: absolute;top: 132px;left: 170px;}
+.btn_factura {position: absolute;top: 132px;left: 310px;}
+.btn_cierre {position: absolute;top: 220px;left: 30px;}
+.btn_productos {position: absolute;top: 220px;left: 170px;}
+.btn_asistencia {position: absolute;top: 220px;left: 310px;}
+.btn_boletaf {position: absolute;top: 310px;left: 30px;}
+.btn_x {position: absolute;top: 310px;left: 170px;}
+.btn_diferido {position: absolute;top: 310px;left: 310px;}
+.btn_boletam {position: absolute;top: 400px;left: 30px;}
+.btn_recargas {position: absolute;top: 400px;left: 170px;}
+.btn_personal {position: absolute;top: 400px;left: 310px;}
 .btn_fixpersonal {margin: 0;padding: 0;}
-.btn_precios {position: absolute;top: 490px;left: 40px;}
-.btn_salir {position: absolute;top: 490px;left: 180px;}
+.btn_precios {position: absolute;top: 490px;left: 30px;}
+.btn_salir {position: absolute;top: 490px;left: 170px;}
 
 .contenedor_manual {
   background: rgba(255,255,255,0.7);
