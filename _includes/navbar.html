@@ -18,58 +18,58 @@
 					<ul class="dropdown-menu">
 					{% assign docs = site.docs | sort: "title" | where: "category", "caja" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 						<li class="divider"></li>
 					{% assign docs = site.docs | sort: "title" | where: "category", "caja1" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 						<li class="divider"></li>
 					{% assign docs = site.docs | sort: "title" | where: "category", "caja2" %}
 					{% for doc in docs %}
-						<li class="dropdown-submenu"><a href="{{doc.url}}">{{doc.nombre}}</a>
+						<li class="dropdown-submenu"><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>
 							<ul class="dropdown-menu">
 							{% assign docs = site.docs | sort: "title" | where: "category", "reimprimir" %}
 							{% for doc in docs %}
-								<li>{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
+								<li>{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
 							{% endfor %}
 							</ul>
 						</li>
 					{% endfor %}
 					{% assign docs = site.docs | sort: "title" | where: "category", "caja3" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 					{% assign docs = site.docs | sort: "title" | where: "category", "caja4" %}
 					{% for doc in docs %}
-						<li class="dropdown-submenu">{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}
+						<li class="dropdown-submenu">{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}
 							<ul class="dropdown-menu">
 							{% assign docs = site.docs | sort: "title" | where: "category", "saldo" %}
 							{% for doc in docs %}
-								<li>{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
+								<li>{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
 							{% endfor %}
 							</ul>
 						</li>
 					{% endfor %}
 					{% assign docs = site.docs | sort: "title" | where: "category", "caja5" %}
 					{% for doc in docs %}
-						<li class="dropdown-submenu">{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}
+						<li class="dropdown-submenu">{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}
 							<ul class="dropdown-menu">
 							{% assign docs = site.docs | sort: "title" | where: "category", "estimar" %}
 							{% for doc in docs %}
-								<li>{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
+								<li>{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
 							{% endfor %}
 							</ul>
 						</li>
 					{% endfor %}
 					{% assign docs = site.docs | sort: "title" | where: "category", "caja6" %}
 					{% for doc in docs %}
-						<li class="dropdown-submenu">{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}
+						<li class="dropdown-submenu">{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}
 							<ul class="dropdown-menu">
 							{% assign docs = site.docs | sort: "title" | where: "category", "cierre" %}
 							{% for doc in docs %}
-								<li>{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
+								<li>{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
 							{% endfor %}
 							</ul>
 						</li>
@@ -81,7 +81,7 @@
 					<ul class="dropdown-menu">
 					{% assign docs = site.docs | sort: "title" | where: "category", "ventas" %}
 					{% for doc in docs %}
-						<li>{% unless doc.category contains 'des' %}<a href="{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
+						<li>{% unless doc.category contains 'des' %}<a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a>{%endunless%}{% if doc.category contains 'des' %}<div class="imita_a">{{doc.nombre}}</div>{%endif%}</li>
 					{% endfor %}
 					</ul>
 				</li>
@@ -90,7 +90,7 @@
 					<ul class="dropdown-menu">
 					{% assign docs = site.docs | sort: "title" | where: "category", "tesoreria" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 					</ul>
 				</li>
@@ -99,17 +99,17 @@
 					<ul class="dropdown-menu">
 					{% assign docs = site.docs | sort: "title" | where: "category", "configuracion" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 						<li class="divider"></li>
 					{% assign docs = site.docs | sort: "title" | where: "category", "configuracion1" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 						<li class="divider"></li>
 					{% assign docs = site.docs | sort: "title" | where: "category", "configuracion2" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 					</ul>
 				</li>
@@ -118,12 +118,12 @@
 					<ul class="dropdown-menu">
 					{% assign docs = site.docs | sort: "title" | where: "category", "utilitarios" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 						<li class="divider"></li>
 					{% assign docs = site.docs | sort: "title" | where: "category", "utilitarios1" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 					</ul>
 				</li>
@@ -134,7 +134,7 @@
 					<ul class="dropdown-menu">
 					{% assign docs = site.docs | sort: "title" | where: "category", "operacion" %}
 					{% for doc in docs %}
-						<li><a href="{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 					</ul>
 				</li>
