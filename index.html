@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<div class="descripcion">
+	<div class="pull-left"><h2>MULTICARD Local: 0000</h2></div>
+	<div class="pull-right boleton"><h2 class="boleta">Boleta:  0000</h2></div>
+</div>
+<div class="contenedor_btn row">
+	<div class="btn_principal pull-left row">
+		<div class="btn_div btn_apertura">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja01apertura'">Apertura Caja</button>
+		</div>
+		<div class="btn_div btn_retiro">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja04retiro'">Retiro</button>
+		</div>
+		<div class="btn_div btn_factura">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja08factura'">Factura</button>
+		</div>
+		<div class="btn_div btn_cierre">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja02cierre'">Cierre Caja</button>
+		</div>
+		<div class="btn_div btn_productos">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja04retiro'">Productos</button>
+		</div>
+		<div class="btn_div btn_asistencia">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_00asistencia'">Asistencia</button>
+		</div>
+		<div class="btn_div btn_boletaf">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja05boletaFiscal'">Boleta Fiscal</button>
+		</div>
+		<div class="btn_div btn_x">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja03x'">Informe X</button>
+		</div>
+		<div class="btn_div btn_diferido">
+			<button class="btn_old" disabled>Pago Diferido</button>
+		</div>
+		<div class="btn_div btn_boletam">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja06boletaManual'">Boleta Manual</button>
+		</div>
+		<div class="btn_div btn_recargas">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_02caja07recargas'">Recargas</button>
+		</div>
+		<div class="btn_div btn_personal">
+			<button class="btn_old btn_fixpersonal" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_00encuesta'">Personal Movistar</button>
+		</div>
+		<div class="btn_div btn_precios">
+			<button class="btn_old" type="button" onclick="location.href='{{site.baseurl}}/docs/pos/pos_06utilitarios01precios'">Act. Precios</button>
+		</div>
+		<div class="btn_div btn_salir">
+			<button class="btn_old">Salir</button>
+		</div>
+	</div>
+	<div class="contenedor_1 pull-left">
+		<div class="contenido">
+			<img class="pull-right" src="publicidad.png">
+		</div>
+	</div>
+</div>
+<div style="font-size:12px;margin:3px 0 7px 5px;font-weight:bold;" class="row .navbar-fixed-bottom">
+	<div class="tabla1 b_multi pull-left">
+		<div class="tabla2">SOPORTE MULTICARD <i class="mc-phone"></i> 2 2913 5750</div>
+	</div>
+	<div class="tabla1 b_user pull-left">
+		<div class="tabla2">MANUALES</div>
+	</div>
+	<div class="tabla1 pull-left">
+		<div class="tabla2">0001</div>
+	</div>
+	<div class="tabla1 b_fecha pull-left">
+		<div class="tabla2">{{ 'now' | date: "%d-%m-%Y" }}</div>
+	</div>
+	<div class="tabla1 b_red pull-left">
+		<div class="tabla2" style="color:#B61C16;">(20170818_1110_SPDH40) Ultimo Cambio de Precios : {{ 'now' | date: "%d-%m-%Y %X" }}</div>
+	</div>
+</div>

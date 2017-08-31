@@ -1,0 +1,9 @@
+markdown: kramdown
+baseurl: ""
+exclude: ['README.md']
+encoding: utf-8
+titulo: ABV POS
+
+collections:
+  docs:
+    output: true
