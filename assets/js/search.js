@@ -6,8 +6,8 @@
       var appendString = '';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
-        var item = store[results[i].ref];
-        appendString += '<li class="media"><a href="' + item.url + '"><div class="pull-left"><i class="' + item.icono + ' media-object"></i></div><div class="media-body"><div class="media-heading">' + item.nombre + '</div>';
+        var item = store[results[i].ref]; // recordar remover https://claudiomateluna.github.io/abv/ de la linea mas abajo
+        appendString += '<li class="media"><a href="https://claudiomateluna.github.io/abv/' + item.url + '"><div class="pull-left"><i class="' + item.icono + ' media-object"></i></div><div class="media-body"><div class="media-heading">' + item.nombre + '</div>';
         appendString += '<div class="media-p">' + item.resumen.substring(0, 150) + '</div></div></li>';
       }
 
