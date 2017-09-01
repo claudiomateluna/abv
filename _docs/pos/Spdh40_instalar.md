@@ -9,7 +9,6 @@ category:
   - pos
   - spdh40
   - general
-  - operacion
 ---
 1.- Desinstalar todo lo relacionado con SPDH31.<br>
 2.- Instalar SPDH40 (Se adjunta setup de instalación).
