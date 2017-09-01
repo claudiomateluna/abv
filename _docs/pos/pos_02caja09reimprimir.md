@@ -13,15 +13,14 @@ category:
 ---
 
 <ul class="nav nav-tabs nav-stacked">
-	{% assign docs = site.docs | sort: "title" | where: "category", "reimprimir" %}
+	{% assign docs = site.docs | sort: "nombre" | where: "category", "reimprimir" %}
 	{% for doc in docs %}
-	<li class="media"><a href="{% unless doc.category contains 'des' %}{{doc.url}}{%endunless%}{% if doc.category contains 'des' %}#{%endif%}">
-	<div class="item-content">
-	<div class="pull-left"><i class="{{doc.icono}} media-object"></i></div>
-	<div class="media-body">
-	<div class="media-heading">{{doc.nombre}}</div>
-	<div class="media-p">{{doc.resumen}}</div>
-	</div>
-	</div>{% unless doc.category contains 'des' %}</a></li>{%endunless%}
+	<li class="media"><a href="{% unless doc.category contains 'des' %}{{site.baseurl}}{{doc.url}}{%endunless%}{% if doc.category contains 'des' %}#{%endif%}">
+		<div class="pull-left"><i class="{{doc.icono}} media-object"></i></div>
+		<div class="media-body">
+		<div class="media-heading">{{doc.nombre}}</div>
+		<div class="media-p">{{doc.resumen}}</div>
+		</div>{% unless doc.category contains 'des' %}</a>{%endunless%}
+	</li>
 	{% endfor %}
 </ul>

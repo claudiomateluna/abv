@@ -42,3 +42,18 @@ Al presionar la tecla **Intro**, se pregunta al cliente si el monto del producto
 
 <p class="centrado"><img src="{{site.baseurl}}/docs/pos/img/contrato/42.png"></p>
 <p class="centrado"><img src="{{site.baseurl}}/docs/pos/img/contrato/43.png"></p>
+
+
+#### Medios de Pago
+
+<ul class="nav nav-tabs nav-stacked">
+	{% assign docs = site.docs | sort: "nombre" | where: "category", "pago" %}
+	{% for doc in docs %}
+	<li class="media"><a href="{{site.baseurl}}{{doc.url}}">
+	<div class="pull-left"><i class="{{doc.icono}} media-object"></i></div>
+	<div class="media-body">
+	<div class="media-heading">{{doc.nombre}}</div>
+	<div class="media-p">{{doc.resumen}}</div>
+	</div></a></li>
+	{% endfor %}
+</ul>

@@ -32,3 +32,17 @@ En forma posterior presionar la tecla **Intro** para efectuar el proceso de impr
 Al momento de emitir la boleta y previo a la impresión del comprobante del vendedor, se envía la transacción a portal de Multicard para registrar la venta:
 
 <p class="centrado"><img src="{{site.baseurl}}/docs/pos/img/contrato/32.png"></p>
+
+#### Medios de Pago
+
+<ul class="nav nav-tabs nav-stacked">
+	{% assign docs = site.docs | sort: "nombre" | where: "category", "pago" %}
+	{% for doc in docs %}
+	<li class="media"><a href="{{site.baseurl}}{{doc.url}}">
+	<div class="pull-left"><i class="{{doc.icono}} media-object"></i></div>
+	<div class="media-body">
+	<div class="media-heading">{{doc.nombre}}</div>
+	<div class="media-p">{{doc.resumen}}</div>
+	</div></a></li>
+	{% endfor %}
+</ul>

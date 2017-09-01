@@ -42,18 +42,14 @@ Para ambos casos, Boleta Manual o Boleta Fiscal, se solicitará **verificación 
 
 Posteriormente, se despliega la siguiente ventana para seleccionar el tipo de venta o Transacción.
 
-<div class="list-block">
-	<ul>
-		{% assign docs = site.docs | sort: "nombre" | where: "category", "boleta" %}
-		{% for doc in docs %}
-		<li><a href="{{doc.url}}" data-view=".view-main" class="item-link close-panel">
-		<div class="item-content">
-		<div class="item-media"><i class="{{doc.icono}}"></i></div>
-		<div class="item-inner">
-		<div class="item-title">{{doc.nombre}}</div>
-		<div class="item-after">{{doc.resumen}}</div>
-		</div>
-		</div></a></li>
-		{% endfor %}
-	</ul>
-</div>
+<ul class="nav nav-tabs nav-stacked">
+	{% assign docs = site.docs | sort: "nombre" | where: "category", "boleta" %}
+	{% for doc in docs %}
+	<li class="media"><a href="{{site.baseurl}}{{doc.url}}">
+	<div class="pull-left"><i class="{{doc.icono}} media-object"></i></div>
+	<div class="media-body">
+	<div class="media-heading">{{doc.nombre}}</div>
+	<div class="media-p">{{doc.resumen}}</div>
+	</div></a></li>
+	{% endfor %}
+</ul>
