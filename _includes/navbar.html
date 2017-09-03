@@ -7,7 +7,7 @@
 					<ul class="dropdown-menu">
 					{% assign docs = site.docs | sort: "title" | where: "category", "mantencion" %}
 					{% for doc in docs %}
-						<li><a href="{{site.baseurl}}{{doc.url}}">{{doc.nombre}}</a></li>
+						<li><a href="{{site.baseurl}}/{{doc.url}}">{{doc.nombre}}</a></li>
 					{% endfor %}
 						<li class="divider"></li>
 						<li><a href="{{site.baseurl}}/">Salir</a></li>
