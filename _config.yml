@@ -1,5 +1,5 @@
 markdown: kramdown
-baseurl: "https://claudiomateluna.github.io/abv"
+baseurl: ""
 url: https://claudiomateluna.github.io/abv
 exclude: ['README.md']
 encoding: utf-8
