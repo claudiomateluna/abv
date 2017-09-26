@@ -1,6 +1,6 @@
 markdown: kramdown
-baseurl: "https://claudiomateluna.github.io/abv"
-url: https://claudiomateluna.github.io/abv
+baseurl: ""
+url: http://www.manualpos.com
 exclude: ['README.md']
 encoding: utf-8
 titulo: ABV POS

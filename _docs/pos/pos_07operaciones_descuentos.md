@@ -26,11 +26,11 @@ Ingresaremos correctamente el **NUMERO DE SERIE** y el **NUMERO DE ABONADO**
 
 <p class="centrado"><img src="{{site.baseurl}}/docs/pos/img/descuento/4.png"></p>
 
-Para hacer efectivo el "**DESCUENTO**" presione: **"P"** si corresponde a un % e ingrese el valor. Ej. 10, si corresponde al 10%.
+Para hacer efectivo el "**DESCUENTO**" presione: **"P"** si corresponde a un % e ingrese el valor. Ej. 10, si corresponde al 10%, en caso de ser un descuento en pesos presione la tecla **"E"** e ingrese el monto en pesos para descontar.
 
 <p class="centrado"><img src="{{site.baseurl}}/docs/pos/img/descuento/5.png"></p>
 
-Despues de presionar la tecla **"P"** se mostrara el mensaje para ingresar el **PORCENTAJE DESCUENTO** que se quiere aplicar.
+Despues de presionar la tecla **"P"** o **"E"** se mostrara el mensaje para ingresar el **PORCENTAJE DESCUENTO** o el **MONTO DESCUENTO** que se quiere aplicar.
 
 <p class="centrado"><img src="{{site.baseurl}}/docs/pos/img/descuento/6.png"></p>
 
